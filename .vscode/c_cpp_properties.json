@@ -1,0 +1,32 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/israa/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/israa/catkin_ws/src/consumer/include/**",
+        "/home/israa/catkin_ws/src/final_project/include/**",
+        "/home/israa/catkin_ws/src/Letter_I/include/**",
+        "/home/israa/catkin_ws/src/mte411_services/include/**",
+        "/home/israa/catkin_ws/src/producer/include/**",
+        "/home/israa/catkin_ws/src/quiz/include/**",
+        "/home/israa/catkin_ws/src/rosserial/rosserial_server/include/**",
+        "/home/israa/catkin_ws/src/rosserial/rosserial_test/include/**",
+        "/home/israa/catkin_ws/src/turtlebot3_simulations/turtlebot3_fake/include/**",
+        "/home/israa/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+        "/home/israa/catkin_ws/src/turtlebot_3/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
