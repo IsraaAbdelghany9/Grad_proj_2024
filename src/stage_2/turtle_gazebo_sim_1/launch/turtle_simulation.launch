@@ -1,0 +1,36 @@
+<launch>
+    <!-- Robot pose -->
+    <arg name="x" default="-2.5"/>
+    <arg name="y" default="0"/> 
+    <arg name="z" default="0"/>
+    <arg name="roll" default="0"/>
+    <arg name="pitch" default="0"/>
+    <arg name="yaw" default="0"/>
+
+  <!-- Launch TurtleBot3 SLAM with gmapping -->
+  <include file="$(find turtlebot3_slam)/launch/turtlebot3_slam.launch">
+    <arg name="slam_methods" value="gmapping"/>
+  </include>
+
+  <!-- Launch Gazebo with TurtleBot3 -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find turtlebot3_gazebo)/worlds/turtlebot3_world.world"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+    <!-- Spawn My Robot --> <!-- بيحط الروبوت بتاعي جوا جازيبو يعني بيعمل سباون للروبوت -->
+    <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" 
+        args="-urdf -param robot_description -model turtlebot3_waffle_pi 
+              -x $(arg x) -y $(arg y) -z $(arg z)
+              -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"/>
+
+  <!-- Launch Move Base -->
+  <include file="$(find turtle_gazebo_sim_1)/launch/move_base.launch" />
+
+  <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find turtle_gazebo_sim_1)/rviz/config_1.rviz"/> -->
+
+</launch>

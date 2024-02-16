@@ -1,0 +1,8 @@
+prefix=/home/israa/Grad_proj_2024/src/stage_3/install
+
+Name: turtle_sim_initial_pkg
+Description: Description of turtle_sim_initial_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

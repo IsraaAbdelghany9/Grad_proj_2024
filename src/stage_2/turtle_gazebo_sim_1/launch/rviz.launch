@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- Launch RViz -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find turtle_gazebo_sim_1)/rviz/config_1.rviz"/>
+
+</launch>

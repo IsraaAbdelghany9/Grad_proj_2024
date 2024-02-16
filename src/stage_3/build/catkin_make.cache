@@ -1,0 +1,2 @@
+turtle_sim_initial_pkg
+-DCATKIN_DEVEL_PREFIX=/home/israa/Grad_proj_2024/src/stage_3/devel -DCMAKE_INSTALL_PREFIX=/home/israa/Grad_proj_2024/src/stage_3/install -G Unix Makefiles

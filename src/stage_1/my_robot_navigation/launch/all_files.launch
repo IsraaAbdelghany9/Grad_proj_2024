@@ -8,7 +8,7 @@
     <include file="$(find my_robot_navigation)/launch/rviz.launch"/>
 
     <!-- Launch other relevant files-->
-    <!-- <include file="$(find my_robot_navigation)/launch/world.launch"/> -->
+    <include file="$(find my_robot_navigation)/launch/world.launch"/>
 
     <!-- Launch other relevant files-->
     <include file="$(find my_robot_navigation)/launch/amcl.launch"/>

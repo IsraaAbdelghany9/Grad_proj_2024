@@ -55,6 +55,8 @@ CMAKE_BINARY_DIR = /home/israa/Grad_proj_2024/build
 # The main recursive "all" target.
 all: gtest/all
 all: stage_1/my_robot_navigation/all
+all: stage_2/turtle_gazebo_sim_1/all
+all: stage_3/src/turtle_sim_initial_pkg/all
 all: stage_1/my_robot_descirption_6/all
 
 .PHONY : all
@@ -62,6 +64,8 @@ all: stage_1/my_robot_descirption_6/all
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
 preinstall: stage_1/my_robot_navigation/preinstall
+preinstall: stage_2/turtle_gazebo_sim_1/preinstall
+preinstall: stage_3/src/turtle_sim_initial_pkg/preinstall
 preinstall: stage_1/my_robot_descirption_6/preinstall
 
 .PHONY : preinstall
@@ -74,6 +78,8 @@ clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
 clean: stage_1/my_robot_navigation/clean
+clean: stage_2/turtle_gazebo_sim_1/clean
+clean: stage_3/src/turtle_sim_initial_pkg/clean
 clean: stage_1/my_robot_descirption_6/clean
 
 .PHONY : clean
@@ -184,6 +190,54 @@ stage_1/my_robot_navigation/clean: stage_1/my_robot_navigation/CMakeFiles/roscpp
 stage_1/my_robot_navigation/clean: stage_1/my_robot_navigation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 .PHONY : stage_1/my_robot_navigation/clean
+
+#=============================================================================
+# Directory level rules for directory stage_2/turtle_gazebo_sim_1
+
+# Recursive "all" directory target.
+stage_2/turtle_gazebo_sim_1/all: stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_world.dir/all
+stage_2/turtle_gazebo_sim_1/all: stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_house.dir/all
+
+.PHONY : stage_2/turtle_gazebo_sim_1/all
+
+# Recursive "preinstall" directory target.
+stage_2/turtle_gazebo_sim_1/preinstall:
+
+.PHONY : stage_2/turtle_gazebo_sim_1/preinstall
+
+# Recursive "clean" directory target.
+stage_2/turtle_gazebo_sim_1/clean: stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+stage_2/turtle_gazebo_sim_1/clean: stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+stage_2/turtle_gazebo_sim_1/clean: stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+stage_2/turtle_gazebo_sim_1/clean: stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_world.dir/clean
+stage_2/turtle_gazebo_sim_1/clean: stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+stage_2/turtle_gazebo_sim_1/clean: stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_house.dir/clean
+stage_2/turtle_gazebo_sim_1/clean: stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+
+.PHONY : stage_2/turtle_gazebo_sim_1/clean
+
+#=============================================================================
+# Directory level rules for directory stage_3/src/turtle_sim_initial_pkg
+
+# Recursive "all" directory target.
+stage_3/src/turtle_sim_initial_pkg/all: stage_3/src/turtle_sim_initial_pkg/CMakeFiles/turtle_in_world.dir/all
+
+.PHONY : stage_3/src/turtle_sim_initial_pkg/all
+
+# Recursive "preinstall" directory target.
+stage_3/src/turtle_sim_initial_pkg/preinstall:
+
+.PHONY : stage_3/src/turtle_sim_initial_pkg/preinstall
+
+# Recursive "clean" directory target.
+stage_3/src/turtle_sim_initial_pkg/clean: stage_3/src/turtle_sim_initial_pkg/CMakeFiles/turtle_in_world.dir/clean
+stage_3/src/turtle_sim_initial_pkg/clean: stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+stage_3/src/turtle_sim_initial_pkg/clean: stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+stage_3/src/turtle_sim_initial_pkg/clean: stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+stage_3/src/turtle_sim_initial_pkg/clean: stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+stage_3/src/turtle_sim_initial_pkg/clean: stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+
+.PHONY : stage_3/src/turtle_sim_initial_pkg/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir
@@ -833,6 +887,357 @@ rosgraph_msgs_generate_messages_py: stage_1/my_robot_navigation/CMakeFiles/rosgr
 stage_1/my_robot_navigation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
 	$(MAKE) -f stage_1/my_robot_navigation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make stage_1/my_robot_navigation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 .PHONY : stage_1/my_robot_navigation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israa/Grad_proj_2024/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_py"
+.PHONY : stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+.PHONY : stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_py: stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_py
+
+# clean rule for target.
+stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+.PHONY : stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israa/Grad_proj_2024/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
+.PHONY : stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+.PHONY : stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# clean rule for target.
+stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+.PHONY : stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israa/Grad_proj_2024/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
+.PHONY : stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+.PHONY : stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_nodejs: stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# clean rule for target.
+stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+.PHONY : stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_world.dir
+
+# All Build rule for target.
+stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_world.dir/all:
+	$(MAKE) -f stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_world.dir/build.make stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_world.dir/depend
+	$(MAKE) -f stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_world.dir/build.make stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_world.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israa/Grad_proj_2024/build/CMakeFiles --progress-num=11,12 "Built target robot_controller_world"
+.PHONY : stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_world.dir/all
+
+# Build rule for subdir invocation for target.
+stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_world.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_world.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+.PHONY : stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_world.dir/rule
+
+# Convenience name for target.
+robot_controller_world: stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_world.dir/rule
+
+.PHONY : robot_controller_world
+
+# clean rule for target.
+stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_world.dir/clean:
+	$(MAKE) -f stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_world.dir/build.make stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_world.dir/clean
+.PHONY : stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_world.dir/clean
+
+#=============================================================================
+# Target rules for target stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israa/Grad_proj_2024/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
+.PHONY : stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+.PHONY : stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_eus: stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_eus
+
+# clean rule for target.
+stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+.PHONY : stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_house.dir
+
+# All Build rule for target.
+stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_house.dir/all:
+	$(MAKE) -f stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_house.dir/build.make stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_house.dir/depend
+	$(MAKE) -f stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_house.dir/build.make stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_house.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israa/Grad_proj_2024/build/CMakeFiles --progress-num=9,10 "Built target robot_controller_house"
+.PHONY : stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_house.dir/all
+
+# Build rule for subdir invocation for target.
+stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_house.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_house.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+.PHONY : stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_house.dir/rule
+
+# Convenience name for target.
+robot_controller_house: stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_house.dir/rule
+
+.PHONY : robot_controller_house
+
+# clean rule for target.
+stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_house.dir/clean:
+	$(MAKE) -f stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_house.dir/build.make stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_house.dir/clean
+.PHONY : stage_2/turtle_gazebo_sim_1/CMakeFiles/robot_controller_house.dir/clean
+
+#=============================================================================
+# Target rules for target stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israa/Grad_proj_2024/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
+.PHONY : stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+.PHONY : stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# clean rule for target.
+stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+.PHONY : stage_2/turtle_gazebo_sim_1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target stage_3/src/turtle_sim_initial_pkg/CMakeFiles/turtle_in_world.dir
+
+# All Build rule for target.
+stage_3/src/turtle_sim_initial_pkg/CMakeFiles/turtle_in_world.dir/all:
+	$(MAKE) -f stage_3/src/turtle_sim_initial_pkg/CMakeFiles/turtle_in_world.dir/build.make stage_3/src/turtle_sim_initial_pkg/CMakeFiles/turtle_in_world.dir/depend
+	$(MAKE) -f stage_3/src/turtle_sim_initial_pkg/CMakeFiles/turtle_in_world.dir/build.make stage_3/src/turtle_sim_initial_pkg/CMakeFiles/turtle_in_world.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israa/Grad_proj_2024/build/CMakeFiles --progress-num=13,14 "Built target turtle_in_world"
+.PHONY : stage_3/src/turtle_sim_initial_pkg/CMakeFiles/turtle_in_world.dir/all
+
+# Build rule for subdir invocation for target.
+stage_3/src/turtle_sim_initial_pkg/CMakeFiles/turtle_in_world.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 stage_3/src/turtle_sim_initial_pkg/CMakeFiles/turtle_in_world.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+.PHONY : stage_3/src/turtle_sim_initial_pkg/CMakeFiles/turtle_in_world.dir/rule
+
+# Convenience name for target.
+turtle_in_world: stage_3/src/turtle_sim_initial_pkg/CMakeFiles/turtle_in_world.dir/rule
+
+.PHONY : turtle_in_world
+
+# clean rule for target.
+stage_3/src/turtle_sim_initial_pkg/CMakeFiles/turtle_in_world.dir/clean:
+	$(MAKE) -f stage_3/src/turtle_sim_initial_pkg/CMakeFiles/turtle_in_world.dir/build.make stage_3/src/turtle_sim_initial_pkg/CMakeFiles/turtle_in_world.dir/clean
+.PHONY : stage_3/src/turtle_sim_initial_pkg/CMakeFiles/turtle_in_world.dir/clean
+
+#=============================================================================
+# Target rules for target stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israa/Grad_proj_2024/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_py"
+.PHONY : stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+.PHONY : stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_py
+
+# clean rule for target.
+stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+.PHONY : stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israa/Grad_proj_2024/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_nodejs"
+.PHONY : stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+.PHONY : stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_nodejs: stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# clean rule for target.
+stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+.PHONY : stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israa/Grad_proj_2024/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_lisp"
+.PHONY : stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+.PHONY : stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# clean rule for target.
+stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+.PHONY : stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israa/Grad_proj_2024/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_eus"
+.PHONY : stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+.PHONY : stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_eus: stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_eus
+
+# clean rule for target.
+stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+.PHONY : stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israa/Grad_proj_2024/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_cpp"
+.PHONY : stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israa/Grad_proj_2024/build/CMakeFiles 0
+.PHONY : stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_cpp: stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# clean rule for target.
+stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+.PHONY : stage_3/src/turtle_sim_initial_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
 # Target rules for target stage_1/my_robot_descirption_6/CMakeFiles/_catkin_empty_exported_target.dir
