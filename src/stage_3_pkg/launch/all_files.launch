@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- Launch other relevant files-->
+    <include file="$(find stage_3_pkg)/launch/gazebo.launch"/>
+
+    <!-- Launch other relevant files-->
+    <include file="$(find stage_3_pkg)/launch/rviz.launch"/>
+
+    <!-- Launch other relevant files-->
+    <!-- <include file="$(find stage_3_pkg)/launch/world.launch"/> -->
+
+    <!-- Launch other relevant files-->
+    <!-- <include file="$(find stage_3_pkg)/launch/amcl.launch"/> -->
+
+    <include file="$(find stage_3_pkg)/launch/move_base.launch" />
+
+</launch>

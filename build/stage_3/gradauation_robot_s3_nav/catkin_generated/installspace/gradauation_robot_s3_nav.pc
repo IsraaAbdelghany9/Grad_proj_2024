@@ -1,0 +1,8 @@
+prefix=/home/israa/Grad_proj_2024/install
+
+Name: gradauation_robot_s3_nav
+Description: Description of gradauation_robot_s3_nav
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

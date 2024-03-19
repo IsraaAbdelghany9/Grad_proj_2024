@@ -1,2 +1,2 @@
-stage_1/my_robot_descirption_6:stage_1/my_robot_navigation:stage_2/turtle_gazebo_sim_1:stage_3/src/turtle_sim_initial_pkg
--DCATKIN_DEVEL_PREFIX=/home/israa/Grad_proj_2024/devel -DCMAKE_INSTALL_PREFIX=/home/israa/Grad_proj_2024/install -G Unix Makefiles
+stage_1/turtle_gazebo_sim_1:stage_2/my_robot_descirption_6:stage_2/my_robot_navigation:stage_3/gradauation_robot_s3:stage_3/gradauation_robot_s3_nav:stage_3_pkg:stage_initial/src/turtle_sim_initial_pkg
+-DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_DEVEL_PREFIX=/home/israa/Grad_proj_2024/devel -DCMAKE_INSTALL_PREFIX=/home/israa/Grad_proj_2024/install -G Unix Makefiles

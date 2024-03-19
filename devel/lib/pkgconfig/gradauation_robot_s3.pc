@@ -1,0 +1,8 @@
+prefix=/home/israa/Grad_proj_2024/devel
+
+Name: gradauation_robot_s3
+Description: Description of gradauation_robot_s3
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

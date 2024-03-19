@@ -339,6 +339,12 @@ GTEST_MAIN_LIBRARY_DEBUG:FILEPATH=GTEST_MAIN_LIBRARY_DEBUG-NOTFOUND
 //The directory containing a CMake configuration file for GTest.
 GTest_DIR:PATH=GTest_DIR-NOTFOUND
 
+//Value Computed by CMake
+Gradauation_robot_s3_BINARY_DIR:STATIC=/home/israa/Grad_proj_2024/build/stage_3/gradauation_robot_s3
+
+//Value Computed by CMake
+Gradauation_robot_s3_SOURCE_DIR:STATIC=/home/israa/Grad_proj_2024/src/stage_3/gradauation_robot_s3
+
 //Enable installation of googletest. (Projects embedding googletest
 // may want to turn this OFF.)
 INSTALL_GTEST:BOOL=OFF
@@ -425,6 +431,18 @@ googletest-distribution_BINARY_DIR:STATIC=/home/israa/Grad_proj_2024/build/gtest
 googletest-distribution_SOURCE_DIR:STATIC=/usr/src/googletest
 
 //Value Computed by CMake
+gradauation_robot_s3_BINARY_DIR:STATIC=/home/israa/Grad_proj_2024/build/stage_3/gradauation_robot_s3
+
+//Value Computed by CMake
+gradauation_robot_s3_SOURCE_DIR:STATIC=/home/israa/Grad_proj_2024/src/stage_3/gradauation_robot_s3
+
+//Value Computed by CMake
+gradauation_robot_s3_nav_BINARY_DIR:STATIC=/home/israa/Grad_proj_2024/build/stage_3/gradauation_robot_s3_nav
+
+//Value Computed by CMake
+gradauation_robot_s3_nav_SOURCE_DIR:STATIC=/home/israa/Grad_proj_2024/src/stage_3/gradauation_robot_s3_nav
+
+//Value Computed by CMake
 gtest_BINARY_DIR:STATIC=/home/israa/Grad_proj_2024/build/gtest/googletest
 
 //Value Computed by CMake
@@ -456,16 +474,22 @@ lib:FILEPATH=/opt/ros/noetic/lib/libxmlrpcpp.so
 message_runtime_DIR:PATH=/opt/ros/noetic/share/message_runtime/cmake
 
 //Value Computed by CMake
-my_robot_descirption_6_BINARY_DIR:STATIC=/home/israa/Grad_proj_2024/build/stage_1/my_robot_descirption_6
+my_robot_descirption_6_BINARY_DIR:STATIC=/home/israa/Grad_proj_2024/build/stage_2/my_robot_descirption_6
 
 //Value Computed by CMake
-my_robot_descirption_6_SOURCE_DIR:STATIC=/home/israa/Grad_proj_2024/src/stage_1/my_robot_descirption_6
+my_robot_descirption_6_SOURCE_DIR:STATIC=/home/israa/Grad_proj_2024/src/stage_2/my_robot_descirption_6
 
 //Value Computed by CMake
-my_robot_navigation_BINARY_DIR:STATIC=/home/israa/Grad_proj_2024/build/stage_1/my_robot_navigation
+my_robot_descirption_BINARY_DIR:STATIC=/home/israa/Grad_proj_2024/build/stage_3/my_robot_descirption
 
 //Value Computed by CMake
-my_robot_navigation_SOURCE_DIR:STATIC=/home/israa/Grad_proj_2024/src/stage_1/my_robot_navigation
+my_robot_descirption_SOURCE_DIR:STATIC=/home/israa/Grad_proj_2024/src/stage_3/my_robot_descirption
+
+//Value Computed by CMake
+my_robot_navigation_BINARY_DIR:STATIC=/home/israa/Grad_proj_2024/build/stage_2/my_robot_navigation
+
+//Value Computed by CMake
+my_robot_navigation_SOURCE_DIR:STATIC=/home/israa/Grad_proj_2024/src/stage_2/my_robot_navigation
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/noetic/share/rosconsole/cmake
@@ -494,20 +518,26 @@ rostime_DIR:PATH=/opt/ros/noetic/share/rostime/cmake
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/noetic/share/sensor_msgs/cmake
 
+//Value Computed by CMake
+stage_3_pkg_BINARY_DIR:STATIC=/home/israa/Grad_proj_2024/build/stage_3_pkg
+
+//Value Computed by CMake
+stage_3_pkg_SOURCE_DIR:STATIC=/home/israa/Grad_proj_2024/src/stage_3_pkg
+
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/noetic/share/std_msgs/cmake
 
 //Value Computed by CMake
-turtle_gazebo_sim_1_BINARY_DIR:STATIC=/home/israa/Grad_proj_2024/build/stage_2/turtle_gazebo_sim_1
+turtle_gazebo_sim_1_BINARY_DIR:STATIC=/home/israa/Grad_proj_2024/build/stage_1/turtle_gazebo_sim_1
 
 //Value Computed by CMake
-turtle_gazebo_sim_1_SOURCE_DIR:STATIC=/home/israa/Grad_proj_2024/src/stage_2/turtle_gazebo_sim_1
+turtle_gazebo_sim_1_SOURCE_DIR:STATIC=/home/israa/Grad_proj_2024/src/stage_1/turtle_gazebo_sim_1
 
 //Value Computed by CMake
-turtle_sim_initial_pkg_BINARY_DIR:STATIC=/home/israa/Grad_proj_2024/build/stage_3/src/turtle_sim_initial_pkg
+turtle_sim_initial_pkg_BINARY_DIR:STATIC=/home/israa/Grad_proj_2024/build/stage_initial/src/turtle_sim_initial_pkg
 
 //Value Computed by CMake
-turtle_sim_initial_pkg_SOURCE_DIR:STATIC=/home/israa/Grad_proj_2024/src/stage_3/src/turtle_sim_initial_pkg
+turtle_sim_initial_pkg_SOURCE_DIR:STATIC=/home/israa/Grad_proj_2024/src/stage_initial/src/turtle_sim_initial_pkg
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/noetic/share/xmlrpcpp/cmake
@@ -660,7 +690,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

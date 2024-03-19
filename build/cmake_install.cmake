@@ -131,10 +131,13 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/israa/Grad_proj_2024/build/gtest/cmake_install.cmake")
-  include("/home/israa/Grad_proj_2024/build/stage_1/my_robot_navigation/cmake_install.cmake")
-  include("/home/israa/Grad_proj_2024/build/stage_2/turtle_gazebo_sim_1/cmake_install.cmake")
-  include("/home/israa/Grad_proj_2024/build/stage_3/src/turtle_sim_initial_pkg/cmake_install.cmake")
-  include("/home/israa/Grad_proj_2024/build/stage_1/my_robot_descirption_6/cmake_install.cmake")
+  include("/home/israa/Grad_proj_2024/build/stage_3/gradauation_robot_s3_nav/cmake_install.cmake")
+  include("/home/israa/Grad_proj_2024/build/stage_2/my_robot_navigation/cmake_install.cmake")
+  include("/home/israa/Grad_proj_2024/build/stage_3_pkg/cmake_install.cmake")
+  include("/home/israa/Grad_proj_2024/build/stage_1/turtle_gazebo_sim_1/cmake_install.cmake")
+  include("/home/israa/Grad_proj_2024/build/stage_initial/src/turtle_sim_initial_pkg/cmake_install.cmake")
+  include("/home/israa/Grad_proj_2024/build/stage_3/gradauation_robot_s3/cmake_install.cmake")
+  include("/home/israa/Grad_proj_2024/build/stage_2/my_robot_descirption_6/cmake_install.cmake")
 
 endif()
 

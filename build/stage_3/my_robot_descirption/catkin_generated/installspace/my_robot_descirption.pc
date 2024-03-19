@@ -1,0 +1,8 @@
+prefix=/home/israa/Grad_proj_2024/install
+
+Name: my_robot_descirption
+Description: Description of my_robot_descirption
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
