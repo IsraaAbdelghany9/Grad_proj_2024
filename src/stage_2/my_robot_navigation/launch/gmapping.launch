@@ -41,5 +41,8 @@
     <remap from="scan" to="$(arg scan_topic)"/>
   </node>
 
-    <node pkg="rviz" type="rviz" name="rviz" output="screen" args="-d $(find my_robot_navigation)/config/robot_slam.rviz"/>
+    <!-- Find my robot Description-->
+    <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find my_robot_navigation)/urdf/my_robot_descirption_6.xacro'"/>
+
+    <!-- <node pkg="rviz" type="rviz" name="rviz" output="screen" args="-d $(find my_robot_navigation)/config/robot_slam.rviz"/> -->
 </launch>

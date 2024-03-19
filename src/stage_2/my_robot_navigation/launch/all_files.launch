@@ -11,8 +11,10 @@
     <include file="$(find my_robot_navigation)/launch/world.launch"/>
 
     <!-- Launch other relevant files-->
-    <include file="$(find my_robot_navigation)/launch/amcl.launch"/>
+    <!-- <include file="$(find my_robot_navigation)/launch/amcl.launch"/> -->
 
     <include file="$(find my_robot_navigation)/launch/move_base.launch" />
+
+    <include file="$(find my_robot_navigation)/launch/gmapping.launch" />
 
 </launch>
